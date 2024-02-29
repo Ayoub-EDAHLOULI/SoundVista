@@ -1,0 +1,76 @@
+/****Navigation Css Style****/
+
+.header{
+    
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 150px;
+
+        .logo{
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+
+            i{
+                font-size: 20px;
+                padding-right: 6px;
+                color: $white-color;
+            }
+
+            h3{
+                color: $white-color;
+            }
+        }
+
+        ul{
+            display: flex;
+
+            li{
+                padding: 0 15px;
+
+                a{
+                    color: $white-color;
+                    font-weight: 400;
+                    transition: .6s;
+
+                    &:hover{
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+
+        #click{
+            visibility: hidden;
+        }
+
+        .nav-button{
+            a{
+                color: $white-color;
+                border: 1px solid $white-color;
+                padding: 10px 20px;
+                border-radius: 3px;
+                transition: .6s;
+
+                &:hover{
+                    background-color: $primary-color;
+                }
+            }
+        }
+
+        .icon{
+            display: none;
+            i{
+                color: $white-color;
+                font-size: 30px;
+                cursor: pointer;
+            }
+        }
+
+        .dropDown_menu{
+            display: none;
+        }
+    }
+}
